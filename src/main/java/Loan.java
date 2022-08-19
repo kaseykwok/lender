@@ -4,6 +4,7 @@ public class Loan {
     private boolean isPaid;
     private double interestRate;
 
+    static private int maxLoanValue;
     static private double maxLoanAmount;
 
     public static double getMaxLoanAmount() {
@@ -38,5 +39,9 @@ public class Loan {
 
     public double getProfit() {
         return amount * interestRate;
+    }
+
+    public static int getMaxLoanValue() {
+        return maxLoanValue;
     }
 }
